@@ -1,0 +1,13 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: #29edff;
+  margin: 0 auto;
+  width: 90%;
+  height: 10%;
+  background-color: #4520ab;
+  justify-content: space-around;
+  border-radius: 0 0 20px 20px;
+}

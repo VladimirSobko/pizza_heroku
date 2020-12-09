@@ -1,0 +1,22 @@
+.choosePizza {
+  background: #4520ab;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 5px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  border: 1px solid black;
+}
+hr {
+  width: 50%;
+}
+.each {
+  font-weight: bold;
+  margin-bottom: 5px;
+}

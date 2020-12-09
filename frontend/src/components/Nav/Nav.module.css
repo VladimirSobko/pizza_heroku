@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap');
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  font-size: x-large;
+  width: 30%;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+li {
+  padding: 2%;
+}
+li:hover {
+  color: #ffbc5b;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

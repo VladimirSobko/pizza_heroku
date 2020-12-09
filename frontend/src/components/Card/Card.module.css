@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap');
+@media (max-width: 992px) {
+  .title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    color: #4520ab;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #4520ab;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: normal;
+    font-size: 0.8rem;
+    color: #4520ab;
+  }
+}
+ .buttonOrder {
+   background: #4520ab;
+   color: white;
+   padding: 10px;
+   font-weight: bold;
+   border-radius: 15%;
+   margin-bottom: 10px;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+.buttonOrder:hover {
+  color: #ffbc5b;
+} 
+.title {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  color: #4520ab;
+}
+.title:hover {
+  color: #ffbc5b;
+}
+.description {
+  font-family: cursive;
+  font-size: 1.3em;
+}

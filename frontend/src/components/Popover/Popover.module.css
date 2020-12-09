@@ -1,0 +1,16 @@
+.linkToCart { 
+  color:#4520ab;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.changeItem {
+  font-weight: bold;
+  border-radius: 7px;
+  min-width: 25px;
+}
+.inputValue {
+  font-weight: bold;
+  border-radius: 7px;
+  max-width: 35px;
+  text-align: center;
+}

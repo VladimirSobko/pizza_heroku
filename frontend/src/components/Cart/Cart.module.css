@@ -1,0 +1,37 @@
+.changeItem {
+  font-weight: bold;
+  border-radius: 7px;
+  min-width: 25px;
+}
+.inputValue {
+  font-weight: bold;
+  border-radius: 7px;
+  max-width: 35px;
+  text-align: center;
+}
+.choosePizza {
+  background: #4520ab;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 5px;
+}
+.delete {
+  background: #4520ab;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  margin: 10px;
+}
+.itemInCart {
+  border: 1px solid #4520ab ;
+  width: 25%;
+  margin: 5px;
+  padding: 5px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
