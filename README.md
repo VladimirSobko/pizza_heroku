@@ -1,5 +1,5 @@
 
-# heroki-pizza
+# heroku-pizza
 
 ## Demo
 
