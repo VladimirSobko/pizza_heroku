@@ -5,6 +5,8 @@
 
 ## Demo
 
+For the frontend, I used React, Redux, for backend - Node JS, Express, for DB - Mongo. 
+
 https://heroku-pizza.herokuapp.com/
 
 ### To run locally
