@@ -1,0 +1,25 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd frontend && yarn && yarn build",
+    "start": "cd backend && yarn && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:VladimirSobko/pizza_heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:VladimirSobko/pizza_heroku.git/issues"
+  },
+  "homepage": "git@github.com:VladimirSobko/pizza_heroku.git#readme",
+  "engines": {
+    "node": "14.x"
+  }
+}
