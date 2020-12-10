@@ -1,3 +1,21 @@
+@media (max-width: 768px) {
+  .itemInCart {
+    border: 1px solid #4520ab ;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .itemInCart {
+    border: 1px solid #4520ab ;
+    width: 80%;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
 .changeItem {
   font-weight: bold;
   border-radius: 7px;
@@ -23,12 +41,6 @@
   font-weight: bold;
   padding: 5px;
   margin: 10px;
-}
-.itemInCart {
-  border: 1px solid #4520ab ;
-  width: 25%;
-  margin: 5px;
-  padding: 5px;
 }
 .wrapper {
   display: flex;

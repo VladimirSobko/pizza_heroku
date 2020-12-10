@@ -30,6 +30,7 @@ export default function Login() {
           }),
         });
         const result = await response.json();  
+        console.log("result", result);
         if(result.answer !== 'no') {
           dispatch(setUserName(result.name));
           dispatch(setUserId(result.id))
@@ -59,7 +60,7 @@ export default function Login() {
           <span>Email</span>
           <input className={style.input} name="email" type="text" placeholder="email" required minLength="2" />
           <span>Password</span>
-          <input className={style.input} type="password" name="password" placeholder="password" required minlength="6"/>
+          <input className={style.input} type="password" name="password" placeholder="password" required minLength="6"/>
           <button className={style.submit}>Submit</button>
         </form>
       </div>

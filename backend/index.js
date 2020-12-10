@@ -47,7 +47,6 @@ app.post('/order', (req,res) => {
     order:  req.body.order ,
   });
    orderOfUser.save();
-   console.log("orderOfUser", orderOfUser);
 })
 
 app.post('/signUp', async (req, res) => {

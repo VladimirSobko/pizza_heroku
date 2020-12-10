@@ -21,7 +21,6 @@ export default function Main() {
   const isLoginedState = useSelector(state=> state.main.isLogined);
   const pizzas = useSelector(state => state.main.pizzas);
   const isLoading = useSelector(state => state.main.loading);
-  console.log("isLoading", isLoading);
 
   useEffect(() => {
     (async() => {

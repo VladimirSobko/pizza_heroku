@@ -29,24 +29,24 @@ const mainSlice = createSlice({
       state.currency = action.payload;
     },
     addItemToCart(state,action) {
-      const {name, priceUSD, priceEUR, id, img } = action.payload;
-        if(state.cart.items[id]) {
-          state.cart.items[id].quantity++;
+      const {name, priceUSD, priceEUR, _id, img } = action.payload;
+        if(state.cart.items[_id]) {
+          state.cart.items[_id].quantity++;
         } else {
-          state.cart.items[id] = {
+          state.cart.items[_id] = {
             name,
             priceUSD,
             priceEUR,
-            id,
+            _id,
             quantity: 1,
             img
           }
         }
     },
     decreaseItemQuantity(state,action) {
-      const {name, priceUSD, priceEUR, id, img } = action.payload;
-        if(state.cart.items[id]) {
-          state.cart.items[id].quantity--;
+      const {name, priceUSD, priceEUR, _id, img } = action.payload;
+        if(state.cart.items[_id]) {
+          state.cart.items[_id].quantity--;
         }
     },
     isLogined(state,action) {
@@ -77,9 +77,9 @@ const mainSlice = createSlice({
       state.history = action.payload;
     },
     removeItemFromCart(state, action) {
-      const {name, priceUSD, priceEUR, id, img } = action.payload;
+      const {name, priceUSD, priceEUR, _id, img } = action.payload;
       // state.delivery = id;
-      delete state.cart.items[id];
+      delete state.cart.items[_id];
     }, 
     setPizzaFromDB(state,action) {
       state.pizzas = action.payload;

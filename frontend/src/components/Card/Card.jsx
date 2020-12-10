@@ -8,13 +8,14 @@ export default function Card(props) {
   const dispatch = useDispatch();
   const {card} = props;
 
+
   function addToCart() {
     dispatch(addItemToCart(card))
     dispatch(succesOrderDone(false))
   }
   
   return (
-    <div style={{ width: "25%", margin: "10px", border: "1px solid #4520ab",padding: "5px" }} >
+    <div className={style.card} >
       <h3 className={style.title}>{card.name}</h3> 
       <img  src={card.img} alt="pizza"/>
       <p className={style.description}>{card.description}</p>

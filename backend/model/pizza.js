@@ -17,7 +17,7 @@ const pizzaSchema = mongoose.Schema({
     type: String,
   },
   _id: {
-    type: String,
+    type: Number,
   }
 });
 

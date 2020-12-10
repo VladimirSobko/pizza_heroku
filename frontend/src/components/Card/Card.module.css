@@ -5,6 +5,12 @@
     font-weight: bold;
     color: #4520ab;
   }
+  .card {
+    width: 25%;
+    margin: 10px;
+    border: 1px solid #4520ab;
+    padding: 5px;
+   }
 }
 @media (max-width: 768px) {
   .title {
@@ -21,7 +27,15 @@
     font-size: 0.8rem;
     color: #4520ab;
   }
+  .card {
+    width: 50%;
+    margin: 10px;
+    border: 1px solid #4520ab;
+    padding: 5px;
+   }
 }
+
+
  .buttonOrder {
    background: #4520ab;
    color: white;
@@ -46,3 +60,4 @@
   font-family: cursive;
   font-size: 1.3em;
 }
+
