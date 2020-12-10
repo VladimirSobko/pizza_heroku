@@ -30,8 +30,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 app.get('/main', async (req,res) => {
-  await createPizzaSeed()
-  const findPizza = await Pizza.find({}); 
+  let findPizza = await Pizza.find({}); 
+  if(findPizza.length === 0) {
+    await createPizzaSeed()
+    findPizza = await Pizza.find({});
+  }
   res.json(findPizza);
 })
 

@@ -40,14 +40,14 @@ export default function Main() {
         dispatch(setLoadingState(false));
       }
     })();
-  },[pizzas]);
+  },[isLoading]);
 
   return (
     <>
       <main style={style.main}>
         {
           isLoading? <LinearProgress/> :
-          pizzas.map((card,index) => {
+          pizzas && pizzas.map((card,index) => {
             return (
             <Card key={index} card={card} index={index}/>
             )

@@ -75,7 +75,7 @@ export default function SimplePopover() {
 
   return (
     <div>
-      <Button style={{ marginTop: "40%", backgroundColor: "#edeef1", fontWeight: "bold", fontSize: "14px" }}  aria-describedby={id} variant="contained" onClick={handleClick}>
+      <Button style={{ marginTop: "10%", backgroundColor: "#edeef1", fontWeight: "bold", fontSize: "14px" }}  aria-describedby={id} variant="contained" onClick={handleClick}>
        Cart {totalCountOfPizza && totalCountOfPizza > 0? totalCountOfPizza : "" }
       </Button>
       <Popover
