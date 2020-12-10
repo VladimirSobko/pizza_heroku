@@ -9,6 +9,7 @@ require('dotenv').config();
 const MongoStore = require('connect-mongo')(session);
 const User = require('./model/user');
 const Order = require('./model/order');
+const Pizza = require('./model/pizza');
 
 app.use(session({
   name: app.get('session cookie name'),
@@ -26,6 +27,11 @@ app.use(express.static('../frontend/build'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
+
+app.get('/main', async (req,res) => {
+  const findPizza = await Pizza.find({}); 
+  res.json(findPizza);
+})
 
 
 app.post('/order', (req,res) => {
