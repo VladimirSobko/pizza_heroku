@@ -10,6 +10,7 @@ const MongoStore = require('connect-mongo')(session);
 const User = require('./model/user');
 const Order = require('./model/order');
 const Pizza = require('./model/pizza');
+const createPizzaSeed = require('./seedPizzas');
 
 app.use(session({
   name: app.get('session cookie name'),
@@ -29,6 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 app.get('/main', async (req,res) => {
+  await createPizzaSeed()
   const findPizza = await Pizza.find({}); 
   res.json(findPizza);
 })

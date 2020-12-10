@@ -18,22 +18,19 @@ export default function Nav() {
 
   return (
     <>
-        <ul style={style.ul}>
-         
-            {/* <li style={style.ul}>
-              <Link to="/">Main </Link>
-            </li> */}
+        <ul className={style.ul}>
           { userNameState === "" ?
           <>
-          
-            <li style={style.ul}>
+            <li className={ style.ul}>
             <Link to="/login">
                  Sign IN
             </Link>
             </li>
-          <Link to="/registration">
-               <li style={style.ul}>Sign UP</li>
-          </Link>
+            <li className={ style.ul }>
+              <Link to="/registration">
+                 Sign UP 
+              </Link>
+            </li> 
           </> : <li>
                   <PopoverForUser/>
                </li> 

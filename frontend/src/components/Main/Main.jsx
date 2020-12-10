@@ -40,7 +40,7 @@ export default function Main() {
         dispatch(setLoadingState(false));
       }
     })();
-  },[]);
+  },[pizzas]);
 
   return (
     <>

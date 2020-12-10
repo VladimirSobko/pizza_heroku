@@ -95,7 +95,7 @@ async function createPizzaSeed() {
     await pizzaItalian.save();
 };
 
-createPizzaSeed();
+module.exports =  createPizzaSeed;
 
 
 
