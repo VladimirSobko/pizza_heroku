@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3df7a013.chunk.css",
+    "main.js": "/static/js/main.1296dc98.chunk.js",
+    "main.js.map": "/static/js/main.1296dc98.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.38debe55.js",
+    "runtime-main.js.map": "/static/js/runtime-main.38debe55.js.map",
+    "static/js/2.3fd8ad9b.chunk.js": "/static/js/2.3fd8ad9b.chunk.js",
+    "static/js/2.3fd8ad9b.chunk.js.map": "/static/js/2.3fd8ad9b.chunk.js.map",
+    "static/js/3.48bd07e0.chunk.js": "/static/js/3.48bd07e0.chunk.js",
+    "static/js/3.48bd07e0.chunk.js.map": "/static/js/3.48bd07e0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3df7a013.chunk.css.map": "/static/css/main.3df7a013.chunk.css.map",
+    "static/js/2.3fd8ad9b.chunk.js.LICENSE.txt": "/static/js/2.3fd8ad9b.chunk.js.LICENSE.txt",
+    "static/media/bbq.6f22dc2b.jpg": "/static/media/bbq.6f22dc2b.jpg",
+    "static/media/cheese.415c3e32.jpg": "/static/media/cheese.415c3e32.jpg",
+    "static/media/double-pepperoni.daa9311c.jpg": "/static/media/double-pepperoni.daa9311c.jpg",
+    "static/media/hawaiian.7103b635.jpg": "/static/media/hawaiian.7103b635.jpg",
+    "static/media/margherita.27b2e7ae.jpeg": "/static/media/margherita.27b2e7ae.jpeg",
+    "static/media/meat-fest.cc150f53.jpg": "/static/media/meat-fest.cc150f53.jpg",
+    "static/media/mexican.86bf8ead.jpg": "/static/media/mexican.86bf8ead.jpg",
+    "static/media/vegan-veggie.0ab265a0.jpeg": "/static/media/vegan-veggie.0ab265a0.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38debe55.js",
+    "static/js/2.3fd8ad9b.chunk.js",
+    "static/css/main.3df7a013.chunk.css",
+    "static/js/main.1296dc98.chunk.js"
+  ]
+}

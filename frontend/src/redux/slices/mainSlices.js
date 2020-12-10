@@ -14,6 +14,8 @@ const defaultState = {
     delivery: 3,
     history: [],
     existHistory: false,
+    pizzas:[],
+    loading: true,
 };
 
 const storageState = window.localStorage.getItem('state');
@@ -78,9 +80,15 @@ const mainSlice = createSlice({
       const {name, priceUSD, priceEUR, id, img } = action.payload;
       // state.delivery = id;
       delete state.cart.items[id];
+    }, 
+    setPizzaFromDB(state,action) {
+      state.pizzas = action.payload;
+    },
+    setLoadingState(state, action) {
+      state.loading = action.payload;
     }
   }
 })
 
-export const { setCurrency, addItemToCart, isLogined, setTotalQuantity, setTotalSumOfOrder, setUserName, succesOrderDone, clearCart, decreaseItemQuantity, setUserId, existHistory, addHistory, removeItemFromCart } = mainSlice.actions;
+export const { setCurrency, addItemToCart, isLogined, setTotalQuantity, setTotalSumOfOrder, setUserName, succesOrderDone, clearCart, decreaseItemQuantity, setUserId, existHistory, addHistory, removeItemFromCart, setPizzaFromDB, setLoadingState } = mainSlice.actions;
 export const mainReducer = mainSlice.reducer;
