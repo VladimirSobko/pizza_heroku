@@ -8,7 +8,7 @@ import {
   useHistory
 } from "react-router-dom";
 import { setUserName, isLogined, existHistory,addHistory } from '../../redux/slices/mainSlices';
-import styles from './PopoverForUser.module.css';
+import style from './PopoverForUser.module.css';
 
 
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
@@ -30,6 +30,7 @@ export default function PopoverForUser() {
   const userId = useSelector(state => state.main.userId);
   const isLoginedState = useSelector(state=> state.main.isLogined);
   const isExistHistory = useSelector(state => state.main.existHistory);
+  
 
   function logout() {
     dispatch(setUserName(""));
@@ -58,7 +59,7 @@ export default function PopoverForUser() {
 
   return (
     <div>
-      <Button style={{ marginTop: "40%", backgroundColor: "#edeef1", fontWeight: "bold", fontSize: "14px" }}  aria-describedby={id} variant="contained" onClick={handleClick}>
+      <Button className={style.userBtn}  aria-describedby={id} variant="contained" onClick={handleClick}>
        {userNameState}
       </Button>
       <Popover
@@ -77,9 +78,9 @@ export default function PopoverForUser() {
       >
         <Typography className={classes.typography}>
         { anchorEl ? 
-        <ul className={styles.wrapper}>
-          <li><Link className={styles.link} onClick={ getHistory } to="/history">History</Link></li>
-          <li className={styles.link} onClick={logout}>Logout</li>
+        <ul className={style.wrapper}>
+          <li><Link className={style.link} onClick={ getHistory } to="/history">History</Link></li>
+          <li className={style.link} onClick={logout}>Logout</li>
         </ul> : "" }
         </Typography>
       </Popover>

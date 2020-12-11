@@ -1,6 +1,7 @@
-select {
-  height: 50px;
+.currency {
+  height: 38px;
   width: 80px;
-  margin-top: 0.5%;
+  font-family: 'Roboto';
+  font-size: large;
 }
 

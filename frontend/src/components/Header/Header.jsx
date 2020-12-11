@@ -4,10 +4,9 @@ import Nav from '../Nav/Nav';
 
 export default function Header() {
   return (
-    <div>
        <header style={style.header}>
+        <h3 className={style.title}>Mario Pizza</h3>
         <Nav/>
       </header>
-    </div>
   )
 }

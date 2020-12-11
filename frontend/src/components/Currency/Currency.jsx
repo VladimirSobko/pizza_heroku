@@ -20,7 +20,7 @@ export default function Currency() {
 
   return (
     <>
-    <select onChange={choiceCurrency} value={valueCurrency} style={style.select} >
+    <select onChange={choiceCurrency} value={valueCurrency} className={style.currency} >
       <option value="usd" name="dollar">USD</option>
       <option value="eur" name="euro">EUR</option>
     </select>

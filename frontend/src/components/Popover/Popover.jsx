@@ -74,8 +74,8 @@ export default function SimplePopover() {
   }
 
   return (
-    <div>
-      <Button style={{ marginTop: "10%", backgroundColor: "#edeef1", fontWeight: "bold", fontSize: "14px" }}  aria-describedby={id} variant="contained" onClick={handleClick}>
+    <div className={ style.btnCart}>
+      <Button className={ style.btnCart}  aria-describedby={id} variant="contained" onClick={handleClick}>
        Cart {totalCountOfPizza && totalCountOfPizza > 0? totalCountOfPizza : "" }
       </Button>
       <Popover
@@ -99,7 +99,7 @@ export default function SimplePopover() {
           <p className="itemInCart" key={index}>
             <h5> {item.name} </h5>
             { currencyState === "usd" ? 
-              <span>$ {item.priceUSD}</span>  : <span>€ {item.priceEUR} </span> 
+              <span classNane={style.spanCurrency}>$ {item.priceUSD}</span>  : <span>€ {item.priceEUR} </span> 
             }
             <img style={{ maxWidth: "50px", maxHeight: "50px"  }} src={item.img} alt="img"/>
             <button className={ style.changeItem } onClick={() => decreaseQuantity(item)}>-</button>
@@ -110,7 +110,7 @@ export default function SimplePopover() {
         }) }
          </div>
         </div> : "" }
-        { arrOfOrderList.length === 0 ? <p style={{fontWeight:"bold", fontSize:"1.3rem"}}> "Sorry, your cart is empty" </p>  : <Link className={style.linkToCart} to="/cart">Go to Cart</Link> }
+        { arrOfOrderList.length === 0 ? <p className={style.empty}> "Sorry, your cart is empty" </p>  : <Link className={style.linkToCart} to="/cart">Go to Cart</Link> }
         </Typography>
       </Popover>
     </div>
