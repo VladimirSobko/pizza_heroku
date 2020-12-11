@@ -46,8 +46,10 @@ export default function Cart() {
   }
 
   function decreaseQuantity(item) {
-    if(item.quantity !== 0 ) {
+    if(item.quantity !== 1 ) {
       dispatch(decreaseItemQuantity(item))
+    } else {
+      dispatch(removeItemFromCart(item))
     }
   }
 

@@ -1,7 +1,30 @@
+@media (min-width: 994px) {
+  img {
+    width: 250px;
+    height: 250px;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+  }
+}
 @media (max-width: 992px) {
   img {
-    width: 200px;
-    height: 200px;
+    width: 165px;
+    height: 165px;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
@@ -23,11 +46,13 @@
   }
 }
 main {
+  padding: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 

@@ -13,8 +13,6 @@ import Card from '../Card/Card';
 import style from './Main.module.css';
 
 
-
-
 export default function Main() {
   const dispatch = useDispatch();
   const stateOfCart = useSelector(state => state.main.showCartList);

@@ -13,6 +13,7 @@
   }
   .title {
     margin-right: 230px;
+    padding: 10px;
   }
  }
 @media (max-width: 991px) {
@@ -29,6 +30,7 @@
   }
   .title {
     margin-right: 100px;
+    padding: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -45,6 +47,7 @@
   }
   .title {
     margin-right: 100px;
+    padding: 10px;
   }
 }
 
@@ -63,26 +66,4 @@
   .title {
     display: none;
   }
-}
-/* header {
-  display: flex;
-  flex-direction: row;
-  font-weight: bold;
-  color: #29edff;
-  margin: 0 auto;
-  width: 100%;
-  height: 10%;
-  background-color: #4520ab;
-  justify-content: flex-end;
-} */
-.marioImg {
-    width: 50%;
-    height: 50%;
-    max-width: 100px;
-}
-.imgWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
