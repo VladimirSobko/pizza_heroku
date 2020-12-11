@@ -84,7 +84,8 @@ export default function Cart() {
                 )
               })
          : <p>
-          <h2>"Cart empty, but our shop no, choice something delicious"</h2> 
+              <h2>Thank you, we are preparing your order...</h2>
+              <h3>"Cart empty, but our shop no, choice something delicious"</h3> 
           </p>
 
       } 

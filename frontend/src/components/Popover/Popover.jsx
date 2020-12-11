@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useSelector } from 'react-redux';
-import { addItemToCart, succesOrderDone, decreaseItemQuantity } from '../../redux/slices/mainSlices';
+import { addItemToCart, succesOrderDone, decreaseItemQuantity, removeItemFromCart } from '../../redux/slices/mainSlices';
 import {
   BrowserRouter as Router,
   Switch,
@@ -68,14 +68,16 @@ export default function SimplePopover() {
   }
 
   function decreaseQuantity(item) {
-    if(item.quantity !== 0 ) {
+    if(item.quantity !== 1 ) {
       dispatch(decreaseItemQuantity(item))
+    } else {
+      dispatch(removeItemFromCart(item))
     }
   }
 
   return (
-    <div className={ style.btnCart}>
-      <Button className={ style.btnCart}  aria-describedby={id} variant="contained" onClick={handleClick}>
+    <div>
+      <Button aria-describedby={id} variant="contained" onClick={handleClick}>
        Cart {totalCountOfPizza && totalCountOfPizza > 0? totalCountOfPizza : "" }
       </Button>
       <Popover
